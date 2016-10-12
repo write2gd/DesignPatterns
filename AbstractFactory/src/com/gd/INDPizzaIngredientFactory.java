@@ -9,7 +9,7 @@ package com.gd;
  *
  * @author dasg
  */
-public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
+public class INDPizzaIngredientFactory implements PizzaIngredientFactory {
 
     public Dough createDough() {
         return new ThinCrustDough();

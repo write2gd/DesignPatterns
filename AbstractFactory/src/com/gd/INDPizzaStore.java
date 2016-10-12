@@ -9,12 +9,12 @@ package com.gd;
  *
  * @author dasg
  */
-public class NYPizzaStore extends PizzaStore {
+public class INDPizzaStore extends PizzaStore {
 
     protected Pizza createPizza(String item) {
         Pizza pizza = null;
         PizzaIngredientFactory ingredientFactory
-                = new NYPizzaIngredientFactory();
+                = new INDPizzaIngredientFactory();
 
         if (item.equals("cheese")) {
 

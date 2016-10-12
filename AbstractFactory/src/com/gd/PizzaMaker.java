@@ -12,7 +12,7 @@ package com.gd;
 public class PizzaMaker {
 
     public static void main(String[] args) {
-        PizzaStore nyStore = new NYPizzaStore();
+        PizzaStore nyStore = new INDPizzaStore();
         PizzaStore chicagoStore = new ChicagoPizzaStore();
 
         Pizza pizza = nyStore.orderPizza("cheese");
