@@ -9,9 +9,9 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>principles</module>
-        <module>concepts</module>
-        <module>structural-pattrens</module>
+        <module>oops-principles</module>
+        <module>oops-concepts</module>
+        <module>structural-patterns</module>
         <module>creational-patterns</module>
         <module>behavioural-patterns</module>
     </modules>
