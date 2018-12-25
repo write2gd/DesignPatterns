@@ -1,4 +1,4 @@
-package com.gd.liskovssubstitution.good;
+package com.gd.interfacesegregation.good;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,8 @@ public class TestProgram {
 
 	public static void main(String[] args) {		
 
-		List<VideoPlayer> allPlayers = new ArrayList<VideoPlayer>();
+		// Created list of video players
+		List<BaseVideoPlayer> allPlayers = new ArrayList<BaseVideoPlayer>();
 		allPlayers.add(new VlcMediaPlayer());
 		allPlayers.add(new DivMediaPlayer());
 		
@@ -20,7 +21,7 @@ public class TestProgram {
 		System.out.println("---------------------------");
 		
 		// Now adding new Winamp player. If you uncomment below line, it would give compile time error as can't add audio player in list of video players.
-		// allPlayers.add(new AudioPlayer());
+		// allPlayers.add(new WinampMediaPlayer());
 	}
 
 	/**
@@ -28,9 +29,9 @@ public class TestProgram {
 	 * 
 	 * @param allPlayers
 	 */
-	public static void playVideoInAllMediaPlayers(List<VideoPlayer> allPlayers) {
+	public static void playVideoInAllMediaPlayers(List<BaseVideoPlayer> allPlayers) {
 		
-		for(VideoPlayer player : allPlayers) {
+		for(BaseVideoPlayer player : allPlayers) {
 			player.playVideo();
 		}
 	}
