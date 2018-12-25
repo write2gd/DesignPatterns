@@ -1,0 +1,52 @@
+#ignore thumbnails created by windows
+Thumbs.db
+#Ignore files 
+*.obj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.dll
+*.lib
+*.sbr
+*.~vsd
+~$*.*
+~*.*
+#JVS
+#Maven generated folders
+target
+target/
+/target/
+/jvs_logs/
+*.log
+swagger.json
+rebel.xml
+#IDE generated files
+*.classpath
+.settings/
+# *.project
+*.pmd
+*.pmdruleset.xml
+*.fbExcludeFilterFile
+*.fbIncludeFilterFile
+.checkstyle
+.project
+org.eclipse.wst.common.component
+#JSVS 
+*.idea
+*.iml
+node_modules/
+/7_implementation/tm/tm-web/coverage/
+/7_implementation/tm-test-uiautomation/tm-webui-tests/.gitignore
